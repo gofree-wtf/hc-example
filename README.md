@@ -3,6 +3,8 @@ hc-example
 
 Apple HomeKit 악세사리를 만들 수 있는 [brutella/hc](https://github.com/brutella/hc) 라이브러리를 테스트해봅니다.
 
+![HomeKit](./docs/homekit.png)
+
 ## Notes
 
 > HomeKit에 대한 정확한 설명은 애플 개발자 [문서](https://developer.apple.com/homekit) 를 참고하세요.
@@ -24,3 +26,6 @@ Apple HomeKit 악세사리를 만들 수 있는 [brutella/hc](https://github.com
   - 악세사리 타입 별로 이벤트가 정해져있는 것 같다.
     - 스위치의 경우: On/Off 제어만 가능
     - TV의 경우: https://github.com/brutella/hc/blob/master/_example/tv/main.go#L67-L134
+- Persistent 데이터를 저장하는 용도로 `db` 디렉토리를 생성한다.
+  - 경로는 변경 가능
+  - 시작시 해당 디렉토리에 있는 데이터를 불러온다.
